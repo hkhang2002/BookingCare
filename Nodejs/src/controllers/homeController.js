@@ -22,8 +22,55 @@ let postCRUD = async (req, res) => {
     return res.send('asdsadas')
 }
 
+let displayGetCRUD = async (req, res) => {
+
+    let data = await CRUDService.getAllUser();
+
+    return res.render('displayCRUD.ejs', {
+        dataTable: data
+    });
+}
+
+let editCRUD = async (req, res) => {
+    let userId = req.query.id;
+    if (userId) {
+        let userData = await CRUDService.getUserById(userId);
+
+        return res.render("editCRUD.ejs",
+            {
+                user: userData,
+            })
+    }
+    else return res.send('User not found')
+}
+
+let putCRUD = async (req, res) => {
+    let data = req.body;
+    let allusers = await CRUDService.updateUser(data);
+    return res.render('displayCRUD.ejs', {
+        dataTable: allusers
+    })
+}
+
+let deleteCRUD = async (req, res) => {
+    let id = req.query.id;
+    let allusers = await CRUDService.deleteUser(id);
+
+    if (id) {
+        await CRUDService.deleteUser(id);
+        return res.render("displayCRUD.ejs", {
+            dataTable: allusers
+        })
+    }
+    else return res.send("deo xoa dc");
+
+}
 module.exports = {
     getHomePage: getHomePage,
     getCRUD: getCRUD,
     postCRUD: postCRUD,
+    displayGetCRUD: displayGetCRUD,
+    editCRUD: editCRUD,
+    putCRUD: putCRUD,
+    deleteCRUD: deleteCRUD,
 }

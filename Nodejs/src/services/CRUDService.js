@@ -36,8 +36,87 @@ let hashUserPassword = (password) => {
     })
 }
 
+let getAllUser = () => {
+    return new Promise(async (resolve, reject) => {
+        try {
+            let users = await db.User.findAll({
+                raw: true,
+            });
+            resolve(users)
+        }
+        catch (e) {
+            reject(e)
+        }
+    })
+}
 
+let getUserById = (userId) => {
+    return new Promise(async (resolve, reject) => {
+        try {
+            let user = await db.User.findOne({
+                where: { id: userId },
+                raw: true,
+            })
+            if (user) {
+                resolve(user)
+            }
+            else {
+                resolve([])
+            }
+        }
+        catch (e) {
+            reject(e)
+        }
+    })
+}
+
+let updateUser = (data) => {
+    return new Promise(async (resolve, reject) => {
+        try {
+            let user = await db.User.findOne({
+                where: { id: data.id }
+            })
+            if (user) {
+                user.firstName = data.firstName,
+                    user.lastName = data.lastName,
+                    user.address = data.address,
+                    user.phonenumber = data.phonenumber
+                await user.save();
+                let allusers = await db.User.findAll();
+                resolve(allusers);
+            } else {
+                resolve()
+            }
+        } catch (e) {
+            console.log(e);
+        }
+
+    })
+
+}
+
+let deleteUser = (userId) => {
+    return new Promise(async (resolve, reject) => {
+        try {
+            let user = await db.User.findOne({
+                where: { id: userId }
+            });
+            if (user) {
+                await user.destroy();
+                let allusers = await db.User.findAll();
+                resolve(allusers);
+            }
+            resolve()
+        } catch (e) {
+            reject(e);
+        }
+    })
+}
 
 module.exports = {
     createNewUser: createNewUser,
+    getAllUser: getAllUser,
+    getUserById: getUserById,
+    updateUser: updateUser,
+    deleteUser: deleteUser,
 }
