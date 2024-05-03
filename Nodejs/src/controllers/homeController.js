@@ -54,13 +54,10 @@ let putCRUD = async (req, res) => {
 
 let deleteCRUD = async (req, res) => {
     let id = req.query.id;
-    let allusers = await CRUDService.deleteUser(id);
 
     if (id) {
         await CRUDService.deleteUser(id);
-        return res.render("displayCRUD.ejs", {
-            dataTable: allusers
-        })
+        return res.send("deleted")
     }
     else return res.send("deo xoa dc");
 

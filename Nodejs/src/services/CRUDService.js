@@ -103,8 +103,7 @@ let deleteUser = (userId) => {
             });
             if (user) {
                 await user.destroy();
-                let allusers = await db.User.findAll();
-                resolve(allusers);
+
             }
             resolve()
         } catch (e) {
