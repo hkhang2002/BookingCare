@@ -1,0 +1,77 @@
+.detail-clinic-container {
+    background-color: #eeeeee;
+
+    .description-clinic {
+
+        background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1)),
+            url(../../../assets/images/tong-dai-doanh-nghiep-nganh-y-te-giao-duc.png) center center no-repeat;
+        background-size: cover;
+        margin-bottom: 10px;
+
+        .description-sp-content {
+            padding: 10px 10%;
+
+            .description-ln-title {
+                font-size: 25px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .search-sp-doctor {
+        width: 80%;
+        margin: 0px auto;
+
+        select {
+            padding: 5px;
+            cursor: pointer;
+        }
+
+
+    }
+
+    .each-dcotor {
+        display: flex;
+        width: 80%;
+        background-color: #fff;
+        padding: 10px 0px;
+        margin: 10px auto;
+        border-radius: 7px;
+        box-shadow: 0 1px 6px #ccc;
+
+        .dt-content-left {
+            width: 50%;
+            padding: 10px 10px 10px 20px;
+
+        }
+
+        .dt-content-right {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin-right: 15px;
+            border-left: 1px solid #e9e8e8;
+
+            .doctor-schedule {
+                margin-left: 20px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #e9e8e8;
+            }
+
+            .doctor-extra-info {
+                padding-top: 10px;
+
+                .doctor-extra-info-container {
+                    .content-up {
+                        border: none;
+                        padding-bottom: 0;
+                    }
+
+                    .content-down {
+                        padding-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}

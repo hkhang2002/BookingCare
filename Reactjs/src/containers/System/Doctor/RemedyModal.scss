@@ -1,0 +1,14 @@
+.btn-send {
+    padding: 0px 15px;
+}
+
+.modal-header {
+    .close {
+        border: none;
+
+        &:hover {
+            background-color: rgb(246, 32, 32);
+            color: white;
+        }
+    }
+}

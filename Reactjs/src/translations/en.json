@@ -1,120 +1,147 @@
 {
-    "common": {
-        "add": "Add",
-        "edit": "Edit",
-        "delete": "Delete",
-        "decentralize": "Decentralize",
-        "close": "Close",
-        "save": "Save",
-        "refresh": "Refresh",
-        "accept": "Accept",
-        "confirm": "Confirm",
-        "confirm-this-task": "Are you sure to process this task?",
-        "fail-to-load-data": "Fail to load data",
-        "unknown-error": "There was an error",
-        "internal-server-error": "Internal server error",
-        "bad-request": "Bad request",
-        "forbiden-request": "Invalid input data",
-        "fail-to-load-all-code": "Fail to load data from allcode",
-        "sum": "Sum",
-        "date-range-invalid": "Date range invalid"
+    "homeheader": {
+        "specialist": "Medical specialist",
+        "searchdoctor": "Find a doctor by specialty",
+        "health": "Health facilities",
+        "chooseHospital": "Choose hospital clinic",
+        "doctor": "Doctor",
+        "chooseDoctor": "Choose a good doctor",
+        "package": "Checkup package",
+        "General": "General health check",
+        "support": "Support",
+        "welcome": "Welcome,",
+        "sreach": "Search",
+        "share": "Please share Book an online appointment on Facebook and like!"
     },
-    "login": {
-        "login": "Login",
-        "username": "Username",
-        "password": "Password",
-        "userpass-wrong": "Invalid username or password!"
+    "banner": {
+        "title1": "MEDICAL BACKGROUND",
+        "title2": "COMPREHENSIVE HEALTH CARE",
+        "specialized": "Specialized examination",
+        "remote": "Remote examination",
+        "general": "General examination",
+        "test": "Medical test",
+        "mental": "Mental health",
+        "dental": "Dental examination"
     },
     "menu": {
-        "system": {
-            "header": "System",
-            "system-administrator": {
-                "header": "System Administrator",
-                "user-manage": "User manage",
-                "product-manage": "Package manage",
-                "register-package-group-or-account": "Register service package for group/account"
-            },
-            "system-parameter": {
-                "header": "System-parameter"
-            }
+        "admin": {
+            "manage-user": "Users System",
+            "manage-doctor": "Manage Doctor",
+            "manage-admin": "Quản lí admin",
+            "crud": "CRUD user",
+            "crud-redux": "CRUD user(redux)",
+            "clinic": "Clinic",
+            "manage-clinic": "Manage clinic",
+            "specialty": "Specialty",
+            "manage-specialty": "Manage Specialty",
+            "handbook": "Handbook",
+            "manage-handbook": "Manage Handbook"
+        },
+        "doctor": {
+            "manage-schedule": "Manage Doctor's schedule",
+            "manage-patient": "Manage Doctor's patient"
         }
     },
-    "system": {
-        "user-manage": {
-            "fail-to-load-fouser": "Fail to load system users list",
-            "user-id": "User ID",
-            "usertype": "User type",
-            "username": "Username",
-            "fullname": "Fullname",
-            "mobile": "Phone",
+    "manage-user": {
+        "add": "Add a new user",
+        "email": "Email",
+        "password": "Password",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "phoneNumber": "Phone Number",
+        "address": "Address",
+        "gender": "Gender",
+        "postion": "Postion",
+        "roleId": "Role Id",
+        "image": "Avatar",
+        "save": "Save user",
+        "edit": "Save change"
+    },
+    "homepage": {
+        "outstanding-doctor": "Outstanding Doctors",
+        "more-info": "More info",
+        "specialty-popular": "Popular specialties",
+        "outstanding-medical": "Outstanding medical facility",
+        "all": "All Posts",
+        "handbook": "Handbook",
+        "about": "What does the media say about the online appointment booking solution?"
+    },
+    "manage-schedule": {
+        "title": "Manage doctor's examination plan",
+        "choose-doctor": "Choose a doctor",
+        "choose-date": "Choose a date",
+        "save": "Save Info"
+    },
+    "patient": {
+        "detail-doctor": {
+            "schedule": "schedule",
+            "no-schedule": "The doctor does not have an appointment during this time, please choose another time!",
+            "choose": "Choose and ",
+            "book": " book (free)"
+        },
+        "extra-infor-doctor": {
+            "text-address": "Address examination",
+            "price": "Examination price",
+            "payment": "Patients can pay for: ",
+            "see-dentail": "See details",
+            "hide": "Hide price list"
+        },
+        "booking-modal": {
+            "title": "Information to book a medical appointment",
+            "FullName": "Full Name",
+            "phoneNumber": "Phone Number",
             "email": "Email",
-            "status": "Status",
-            "add-user": "Add user",
-            "edit-user": "Edit user information",
-            "password": "Password",
-            "retype-password": "Retype password",
-            "add-user-success": "Add user successfully",
-            "edit-user-success": "Change user information successfully",
-            "add-user-fail": "Fail to add user",
-            "edit-user-fail": "Fail to change user information",
-            "del-user-success": "Delete user successfully",
-            "del-user-fail": "Fail to delete user",
-            "invalid-input": {
-                "username": "Please fill in username",
-                "fullname": "Please fill in fullname",
-                "password": "Please fill in password"
-            },
-            "sure-delete-user": "Are you sure to delete this user?"
-        },
-        "product-manage": {
-            "fail-to-load-foprtype": "Fail to load packages list",
-            "prid": "Package ID",
-            "prname": "Package name",
-            "prtype": "Package type",
-            "status": "Status",
-            "description": "Description",
-            "effective-date": "Effective date",
-            "expiration-date": "Expiration date",
-            "add-product": "Add package",
-            "add-product-success": "Add package successfully",
-            "add-product-fail": "Fail to add package",
-            "edit-product": "Edit package information",
-            "package-decentralize": "Package decentralize",
-            "edit-product-success": "Edit package information successfully",
-            "edit-product-fail": "Fail to edit package information",
-            "delete-product-success": "Delete package successfully",
-            "delete-product-fail": "Fail to delete package",
-            "invalid-input": {
-                "prid": "Please fill in package ID",
-                "prname": "Please fill in package name"
-            },
-            "fail-to-load-decentralize-info": "Fail to load decentralize info",
-            "save-decentralize-success": "Save decentralization successfully",
-            "save-decentralize-fail": "Fail to save decentralization",
-            "sure-delete-package": "Are you sure to delete this package?"
-        },
-        "register-package-group-or-acc": {
-            "assign-service-package-to-customer": "Assign service package to customer",
-            "package-name": "Package name",
-            "assign-type": "Assign type",
-            "cust-acc-group": "Customer/account group",
-            "effective-date": "Effective date",
-            "expiration-date": "Expiration date",
-            "assign": "Assign",
-            "manage-assign-groups": "Manage assign groups",
-            "group-cust-acc-name": "Group/customer account name",
-            "del-assign": "Del assign",
-            "fail-to-load-manage-assign-groups-list": "Fail to load manage assign groups list",
-            "invalid-selected": {
-                "currentfoProduct": "Invalid package",
-                "currentAssignType": "Invalid assign type",
-                "currentFoUser": "Invalid customer/account group"
-            },
-            "assign-service-package-to-customer-success": "Assign service package to customer successfully",
-            "assign-service-package-to-customer-fail": "Fail to assign service package to customer",
-            "remove-assign-success": "Unassign service package to customer successfully",
-            "remove-assign-fail": "Fail to unassign service package to customer",
-            "sure-delete-assign": "Are you sure to unassign service package to customer?"
+            "address": "Address",
+            "reason": "Reason for medical examination",
+            "birthday": "Date of birth",
+            "gender": "Gender",
+            "btnConfirm": "Confirm",
+            "cancel": "Cancel",
+            "priceBooking": "Free booking",
+            "confirm-email": "Appointment confirmed successfully!",
+            "confirm-email-x": "Appointment does not exist or has been confirmed!"
         }
+    },
+    "admin": {
+        "manage-doctor": "Create more Doctor information",
+        "select-doctor": "Choose a doctor",
+        "intro": "Introduction information",
+        "save": "Save infor",
+        "add": "Create infor",
+        "price": "Medical examination price",
+        "payment": "Payment methods",
+        "province": "Choose a province",
+        "name-clinic": "Clinic name",
+        "address-clinic": "Clinic address",
+        "note": "Note",
+        "specialty": "Choose specialty",
+        "clinic": "Choose clinic",
+        "img-clinic": "Clinic photo",
+        "name-specialty": "Specialist name",
+        "img-specialty": "Professional photo"
+    },
+    "doctor": {
+        "manage-patient": "Manage Doctor's patient",
+        "choose-date": "Choose date examination",
+        "time": "Time",
+        "name": "FullName",
+        "address": "Address",
+        "gender": "Gender",
+        "confirm": "Confirm",
+        "no-data": "No appointment",
+        "email": "Patient email",
+        "file": "Select the medical examination form file",
+        "send": "Send",
+        "cancel": "Cancel",
+        "send-bill": "Send medical bills"
+    },
+    "about": {
+        "content": "Booking an appointment online is an effective solution to help people have a suitable schedule, instead of having to rush to wait for an appointment. The hospital always tries to improve the quality of service as well as create comfort when people come to visit. Before booking a telemedicine appointment, people should find out in advance the working schedule and working time to conveniently arrange the examination schedule."
+    },
+    "handbook": {
+        "hanbook-1": "Distinguish common types of acne and how to treat acne",
+        "hanbook-2": "Ringworm: Signs? Reason? Is ringworm contagious?",
+        "hanbook-3": "What is the best method of face lift? 5 prestigious lifting addresses in Hanoi",
+        "hanbook-4": "Beware of Toenail Fungus: Symptoms, causes, and ways to treat foot fungus"
     }
 }

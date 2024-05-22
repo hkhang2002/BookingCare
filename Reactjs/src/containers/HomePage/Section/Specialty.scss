@@ -1,0 +1,21 @@
+.specialty-child {
+    cursor: pointer;
+
+
+
+    &:hover {
+        color: #11bcde;
+    }
+}
+
+.section-body {
+
+
+    .specialty-name {
+
+        margin-top: 15px; // Khoảng cách giữa ảnh và tên
+        margin-left: 90px;
+        font-size: 1.2em; // Kích thước chữ
+        font-weight: bold; // Độ đậm của chữ
+    }
+}

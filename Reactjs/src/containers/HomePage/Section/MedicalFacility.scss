@@ -1,0 +1,12 @@
+.img-customize {
+    &:hover {
+        color: #11bcde;
+    }
+
+    .clinic-name {
+        margin-top: 15px; // Khoảng cách giữa ảnh và tên
+        margin-left: 10px;
+        font-size: 1.2em; // Kích thước chữ
+        font-weight: bold; // Độ đậm của chữ
+    }
+}
